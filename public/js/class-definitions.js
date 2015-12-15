@@ -5,6 +5,7 @@
  *
  */
 
+var unicorn = null;
 
 /* Step 2
  *
