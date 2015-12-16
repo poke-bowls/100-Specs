@@ -44,7 +44,7 @@ var planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus
  *
  */
 
-
+var galilean_moons = ['Io', 'Europa', 'Ganymede', 'Callisto'];
 
 /* Step 6 φ
  *
@@ -52,6 +52,7 @@ var planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus
  * and assign the value of golden_ratio to 1.61803398874
  *
  */
+
 
 
 /* Step 7
