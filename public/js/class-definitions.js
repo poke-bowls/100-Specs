@@ -993,6 +993,12 @@ function Vehicle( make, model ) {
  *
  */
 
+function Shape( sides ) {
+  this.sides = sides;
+  if ( sides < 3 || typeof sides !== "number" ) {
+    this.sides = null;
+  }
+}
 
 /**
  * Step 53
