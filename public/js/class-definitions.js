@@ -393,6 +393,15 @@ var browseURL = function ( input ) {
  *
  */
 
+var listLivingOrgClass = function() {
+  var deezLists = document.createElement('ul');
+  for ( i = 0; i < livingOrganismClassification.length; i++ ) {
+    deezItems = document.createElement('li');
+    deezItems.innerText = livingOrganismClassification[i];
+    deezLists.appendChild(deezItems);
+    }
+  return deezLists.outerHTML;
+};
 
 /* Step 26
  *
@@ -405,8 +414,8 @@ var browseURL = function ( input ) {
  *
  * If the planet does exist, select a different, random
  * planet from the "planets" variable. Once selected,
- * return the following message:
  *
+ * return the following message:
  * "I'm from {currentPlanet}, but I wish I could go to {randomPlanet}."
  *
  * @param {String}
