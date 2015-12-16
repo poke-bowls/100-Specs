@@ -330,6 +330,12 @@ var addNumbers = function( a, b ) {
  *
  */
 
+var installLinux = function( string ) {
+  if ( linuxFlavors.indexOf( string ) !== -1 ) {
+    return true;
+  }
+  return false;
+};
 
 
 /* Step 23
