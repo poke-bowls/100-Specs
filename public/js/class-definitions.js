@@ -246,6 +246,7 @@ var laptopCosts = {
  *
  */
 
+var livingOrganismClassification = ["Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species"];
 
 /* Step 18
  *
@@ -259,6 +260,7 @@ var laptopCosts = {
  * "cvs"
  *
  */
+
 
 
 /* Step 19
@@ -280,6 +282,7 @@ var laptopCosts = {
  */
 
 
+
 /* Step 20
  *
  * Define a function named 'sahara_river'
@@ -288,6 +291,7 @@ var laptopCosts = {
  * @return {String}
  *
  */
+
 
 
 /* Step 21
@@ -302,6 +306,7 @@ var laptopCosts = {
  */
 
 
+
 /* Step 22
  *
  * Define a function named "installLinux"
@@ -313,6 +318,7 @@ var laptopCosts = {
  * @return {Bool}
  *
  */
+
 
 
 /* Step 23
