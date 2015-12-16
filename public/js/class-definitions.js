@@ -53,7 +53,7 @@ var galilean_moons = ['Io', 'Europa', 'Ganymede', 'Callisto'];
  *
  */
 
-
+var golden_ratio = 1.61803398874;
 
 /* Step 7
  *
