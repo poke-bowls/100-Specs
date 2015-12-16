@@ -481,6 +481,12 @@ Person.prototype.earnMoney = function ( guap ) {
  *
  */
 
+var purchaseLaptop = function ( laptop ) {
+  if ( laptopCosts.hasOwnProperty( laptop ) ) {
+    return laptopCosts[laptop].toString();
+  }
+  return -1;
+};
 
 /* Step 29
  *
