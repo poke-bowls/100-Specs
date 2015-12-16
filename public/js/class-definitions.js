@@ -14,6 +14,7 @@ var unicorn = null;
  *
  */
 
+var videogame_system = "Atari";
 
 /* Step 3
  *
@@ -22,6 +23,7 @@ var unicorn = null;
  *
  */
 
+var sahara_animal = "The Addax";
 
 /* Step 4
  *
@@ -31,6 +33,8 @@ var unicorn = null;
  * Capitalize the names.
  */
 
+var planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
+
 
 /* Step 5
  *
@@ -39,6 +43,7 @@ var unicorn = null;
  * each galilean moon of Jupiter
  *
  */
+
 
 
 /* Step 6 φ
@@ -75,6 +80,11 @@ var unicorn = null;
  *   unknown => undefined
  */
 
+var gender = {
+  female: "female",
+  male: "male",
+  unknown: undefined
+};
 
 /* Step 10
  *
@@ -89,6 +99,12 @@ var unicorn = null;
  *
  */
 
+var princess_leia = {
+  name: "Leia Organa",
+  money: 890,
+  age: 20,
+  gender: female
+};
 
 /* Step 11
  *
