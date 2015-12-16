@@ -423,6 +423,14 @@ var listLivingOrgClass = function() {
  *
  */
 
+var favoritePlanet = function ( input ) {
+  if ( planets.indexOf( input ) !== -1 ) {
+    var newPlanet = planets[(Math.floor( Math.random() * planets.length))];
+    return "I'm from " + input + ", but I wish I could go to " + newPlanet + ".";
+  } else {
+    return input + " is not a planet!";
+  }
+};
 
 /* Step 27
  *
