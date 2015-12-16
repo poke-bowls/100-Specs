@@ -337,7 +337,6 @@ var installLinux = function( string ) {
   return false;
 };
 
-
 /* Step 23
  *
  * Define a function named "drink" that takes
@@ -356,6 +355,14 @@ var installLinux = function( string ) {
  *
  */
 
+var drink = function( type ) {
+  if ( Array.isArray( beers[type] ) ) {
+    return "This " + type + " is " + beers[type][0] + " and " + beers[type][1] + ".";
+  } else if ( beers.hasOwnProperty( type ) ) {
+    return "This " + type + " is " + beers[type] + ".";
+  }
+  return false;
+};
 
 /* Step 24
  *
