@@ -771,6 +771,7 @@ Scientist.prototype.addDiscovery = function( string ) {
 
 Scientist.prototype = Object.create ( Person.prototype );
 Person.constructor.prototype = Person;
+
 /* Step 36
  *
  * Define a class named "BankAccount" that has properties
@@ -791,7 +792,6 @@ Person.constructor.prototype = Person;
  *   rob
  *
  */
-
 
 /* Step 37
  *
@@ -965,6 +965,10 @@ Person.constructor.prototype = Person;
  * @param {string} gender  male or female
  */
 
+function Animal( species, gender ) {
+  this.species = species;
+  this.gender = gender;
+}
 
 /**
  * Step 51
