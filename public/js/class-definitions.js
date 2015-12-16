@@ -500,6 +500,12 @@ var purchaseLaptop = function ( laptop ) {
  *
  */
 
+var canTalkAbout = function ( club ) {
+  if ( club !== club_name ) {
+    return true;
+  }
+  return false;
+};
 
 /* Step 30
  *
