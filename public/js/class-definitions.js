@@ -664,7 +664,6 @@ PrincessLeia.prototype.marries = function( interest ) {
   return true;
   }
 };
-
 }
 
 PrincessLeia.prototype = Object.create(Person.prototype);
@@ -688,6 +687,17 @@ Person.constructor.prototype = Person;
  *
  */
 
+function Stapler( color, maxPapers ) {
+  this.color = color;
+  this.maxPapers = maxPapers;
+}
+
+Stapler.prototype.staplePapers = function ( number ) {
+  if ( number <= this.maxPapers ) {
+    return true;
+  }
+  return false;
+};
 
 /* Step 35
  *
