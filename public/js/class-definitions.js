@@ -71,6 +71,7 @@ var earths_water_composition = 0.71;
  *
  */
 
+var club_name = "Fight Club";
 
 /* Step 9
  *
