@@ -376,6 +376,12 @@ var drink = function( type ) {
  *
  */
 
+var browseURL = function ( input ) {
+  if ( browsers.hasOwnProperty( input ) ) {
+    return browsers[input];
+  }
+  return false;
+};
 
 /* Step 25
  *
