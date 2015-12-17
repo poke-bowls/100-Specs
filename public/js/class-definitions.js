@@ -1292,6 +1292,15 @@ House.prototype.isATallStory = function( storiesTooTall ) {
  *
  */
 
+Lightbulb.prototype.flipSwitch = function( on ) {
+  if ( on !== "on" ) {
+    this.isOn = false;
+    return false;
+  } else {
+    this.isOn = true;
+    return true;
+  }
+};
 
  /* Step 89
  *
