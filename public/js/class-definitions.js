@@ -1310,6 +1310,12 @@ Lightbulb.prototype.flipSwitch = function( on ) {
  *
  */
 
+Cookie.prototype.swipedByCookieMonster = function( dayOfTheWeek ) {
+  if ( this.flavor === 'chocolate' && dayOfTheWeek === "Monday" ) {
+    return true;
+  }
+  return false;
+};
 
  /* Step 90
  *
@@ -1324,7 +1330,15 @@ Lightbulb.prototype.flipSwitch = function( on ) {
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
  *
  */
-
+var junkFood = [ 'chips', 'soda', 'ice cream', 'popcorn', 'candy' ];
+Meal.prototype.containsJunkFood = function( foods ) {
+  for ( i = 0; i < junkFood.length; i++ ) {
+    if ( this.foods.indexOf( junkFood[i] ) > -1 ) {
+      return true;
+    }
+  }
+  return false;
+};
 
  /* Steps 91 to 100
  *
