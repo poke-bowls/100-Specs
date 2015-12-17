@@ -1135,7 +1135,6 @@ var dinner = new Meal( 'fish, vegetables' );
  *
  */
 
-
 /* Step 81
  *
  * Declare an Animal method called isWarmBlooded that returns
@@ -1330,10 +1329,11 @@ Cookie.prototype.swipedByCookieMonster = function( dayOfTheWeek ) {
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
  *
  */
+
 var junkFood = [ 'chips', 'soda', 'ice cream', 'popcorn', 'candy' ];
 Meal.prototype.containsJunkFood = function( foods ) {
   for ( i = 0; i < junkFood.length; i++ ) {
-    if ( this.foods.indexOf( junkFood[i] ) > -1 ) {
+    if ( this.foods.indexOf( junkFood[i] ) > - 1 ) {
       return true;
     }
   }
@@ -1346,17 +1346,16 @@ Meal.prototype.containsJunkFood = function( foods ) {
  *
  */
 
-
 /* Step 91
  *
  * Call the isWarmBlooded method on three Animal instances
  * and assign the values to each variable below.
  *
  */
-var warmBloodedAnimal;
-var coldBloodedAnimal;
-var notWarmOrColdAnimal;
-
+var mushu = new Animal( 'Reptile', 'male' );
+var warmBloodedAnimal = george.isWarmBlooded();
+var coldBloodedAnimal = nemo.isWarmBlooded();
+var notWarmOrColdAnimal = mushu.isWarmBlooded();
 
 /* Step 92
  *
