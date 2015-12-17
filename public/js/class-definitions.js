@@ -1352,6 +1352,7 @@ Meal.prototype.containsJunkFood = function( foods ) {
  * and assign the values to each variable below.
  *
  */
+
 var mushu = new Animal( 'Reptile', 'male' );
 var warmBloodedAnimal = george.isWarmBlooded();
 var coldBloodedAnimal = nemo.isWarmBlooded();
@@ -1363,9 +1364,9 @@ var notWarmOrColdAnimal = mushu.isWarmBlooded();
  * and assign the values to each variable below.
  *
  */
+
 var streetDriving = civic.drive( "Sesame Street" );
 var forwardDriving = forte.drive();
-
 
  /* Step 93
  *
@@ -1373,11 +1374,11 @@ var forwardDriving = forte.drive();
  * and assign the values to each variable below.
  *
  */
+
 var ten = new Shape( 10 );
 var ambiguous = new Shape( 10234 );
 var decagon = ten.getType();
 var polygon = ambiguous.getType();
-
 
 /* Step 94
  *
@@ -1385,9 +1386,9 @@ var polygon = ambiguous.getType();
  * and assign the values to each variable below.
  *
  */
-var openAClosedBox;
-var closeAnOpenBox;
-
+var mail = new Box( 'Order', false );
+var openAClosedBox = mail.openBox();
+var closeAnOpenBox = catBox.openBox();
 
  /* Step 95
  *
