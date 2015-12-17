@@ -1101,8 +1101,7 @@ var square = new Shape( 4 );
 var hexagon = new Shape( 6 );
 
 // Create 2 boxes
-var cat = new Animal( "Cat", 'female' );
-var catBox = new Box( cat, true );
+var catBox = new Box( new Animal( 'Cat', 'male' ), true );
 var christmasPresent = new Box( "Coal", false );
 
 // Create 2 doors
@@ -1229,6 +1228,14 @@ Shape.prototype.getType = function( sides ) {
  *
  */
 
+Box.prototype.openBox = function( isOpen ) {
+ if ( this.isOpen === false ) {
+    this.isOpen = true;
+    return true;
+  } else {
+    return false;
+  }
+};
 
  /* Step 85
  *
