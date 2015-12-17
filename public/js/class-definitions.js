@@ -1232,9 +1232,8 @@ Box.prototype.openBox = function( isOpen ) {
  if ( this.isOpen === false ) {
     this.isOpen = true;
     return true;
-  } else {
-    return false;
   }
+  return false;
 };
 
  /* Step 85
@@ -1245,6 +1244,15 @@ Box.prototype.openBox = function( isOpen ) {
  *
  */
 
+Door.prototype.openClose = function( isOpen ) {
+  if ( this.isOpen === false ) {
+    this.isOpen = true;
+    return true;
+  } else {
+    this.isOpen = false;
+    return false;
+  }
+};
 
 /* Step 86
  *
