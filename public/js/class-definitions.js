@@ -1373,8 +1373,10 @@ var forwardDriving = forte.drive();
  * and assign the values to each variable below.
  *
  */
-var decagon;
-var polygon;
+var ten = new Shape( 10 );
+var ambiguous = new Shape( 10234 );
+var decagon = ten.getType();
+var polygon = ambiguous.getType();
 
 
 /* Step 94
