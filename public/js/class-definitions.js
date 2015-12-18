@@ -1419,8 +1419,8 @@ var blackShoesSize10 = dressShoes.findShoes();
  *
  */
 
-var farTooTallAStory;
-var shortStory;
+var farTooTallAStory = twoStory.isATallStory( 1 );
+var shortStory = singleStory.isATallStory( 5 );
 
  /* Step 98
  *
