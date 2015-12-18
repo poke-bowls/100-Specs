@@ -1386,6 +1386,7 @@ var polygon = ambiguous.getType();
  * and assign the values to each variable below.
  *
  */
+
 var mail = new Box( 'Order', false );
 var openAClosedBox = mail.openBox();
 var closeAnOpenBox = catBox.openBox();
@@ -1396,9 +1397,10 @@ var closeAnOpenBox = catBox.openBox();
  * and assign the values to each variable below.
  *
  */
-var openAClosedDoor;
-var closeAnOpenDoor;
-
+var suicideDoor = new Door( true );
+var opportunity = new Door( false );
+var openAClosedDoor = opportunity.openClose();
+var closeAnOpenDoor = suicideDoor.openClose();
 
 /* Step 96
  *
@@ -1406,9 +1408,9 @@ var closeAnOpenDoor;
  * and assign the values to each variable below.
  *
  */
-var redShoesSize7;
-var blackShoesSize10;
 
+var redShoesSize7 = rubySlippers.findShoes();
+var blackShoesSize10 = dressShoes.findShoes();
 
  /* Step 97
  *
@@ -1416,9 +1418,9 @@ var blackShoesSize10;
  * and assign the values to each variable below.
  *
  */
+
 var farTooTallAStory;
 var shortStory;
-
 
  /* Step 98
  *
@@ -1426,9 +1428,9 @@ var shortStory;
  * and assign the values to each variable below.
  *
  */
+
 var kitchenLightsOn;
 var porchLightsOff;
-
 
  /* Step 99
  *
@@ -1436,9 +1438,9 @@ var porchLightsOff;
  * and assign the values to each variable below.
  *
  */
+
 var cookieMonsterPwns;
 var cookieMonsterBlocked;
-
 
  /* Step 100
  *
@@ -1446,5 +1448,6 @@ var cookieMonsterBlocked;
  * and assign the values to each variable below.
  *
  */
+
 var badForYou;
 var goodForYou;
