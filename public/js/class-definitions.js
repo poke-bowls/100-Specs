@@ -1128,7 +1128,6 @@ var gingerbread = new Cookie( 'gingerbread' );
 var breakfast = new Meal( 'cereal, milk' );
 var dinner = new Meal( 'fish, vegetables' );
 
-
  /* Steps 81 to 90
  *
  * Create methods
@@ -1333,7 +1332,7 @@ Cookie.prototype.swipedByCookieMonster = function( dayOfTheWeek ) {
 var junkFood = [ 'chips', 'soda', 'ice cream', 'popcorn', 'candy' ];
 Meal.prototype.containsJunkFood = function( foods ) {
   for ( i = 0; i < junkFood.length; i++ ) {
-    if ( this.foods.indexOf( junkFood[i] ) > - 1 ) {
+    if ( this.foods.indexOf( junkFood[i] ) !== - 1 ) {
       return true;
     }
   }
@@ -1440,8 +1439,8 @@ var porchLightsOff = flashLight.flipSwitch();
  *
  */
 
-var cookieMonsterPwns ;
-var cookieMonsterBlocked ;
+var cookieMonsterPwns = chocolateChip.swipedByCookieMonster( "Monday" );
+var cookieMonsterBlocked = gingerbread.swipedByCookieMonster( "Tuesday" );
 
  /* Step 100
  *
@@ -1449,6 +1448,9 @@ var cookieMonsterBlocked ;
  * and assign the values to each variable below.
  *
  */
+var breakfast = new Meal( 'cereal, milk' );
+var dinner = new Meal( 'fish, vegetables' );
 
-var badForYou;
-var goodForYou;
+
+var badForYou = breakfast.containsJunkFood();
+var goodForYou = dinner.containsJunkFood();
